@@ -34,11 +34,11 @@ namespace CubeAutomation
 
                     IWebElement userNameTextBox = driver.FindElement(By.Id("UserName"));
                     userNameTextBox.Clear();
-                    userNameTextBox.SendKeys("waqarmaker");
+                    userNameTextBox.SendKeys("");
 
                     IWebElement userPasswordTextBox = driver.FindElement(By.Id("userpassword"));
                     userPasswordTextBox.Clear();
-                    userPasswordTextBox.SendKeys("Fiserv@M2024$");
+                    userPasswordTextBox.SendKeys("");
 
                     driver.FindElement(By.Id("sendotp")).Click();
 
@@ -46,7 +46,7 @@ namespace CubeAutomation
 
                     IWebElement otpTextBox = driver.FindElement(By.Id("otp"));
                     otpTextBox.Clear();
-                    otpTextBox.SendKeys("1111");
+                    otpTextBox.SendKeys("");
 
                     driver.FindElement(By.Id("signinbtn")).Click();
 
